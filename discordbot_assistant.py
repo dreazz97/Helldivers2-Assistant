@@ -41,7 +41,7 @@ def generate_response(input):
 
 def query_llama(prompt):
     try:
-        with open('data.txt', 'r') as file:
+        with open('AIcontext.txt', 'r') as file:
             context = file.read()
         messages = [
             {"role": "system", "content": context},
