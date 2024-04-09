@@ -55,7 +55,7 @@ def query_llama(prompt):
         print("Answer: " + message_content)
         return message_content
     except Exception as e:
-        print("Answer" + e)
-        return e
+        print(e)
+        return "Sorry, I can't answer that right now, I suddenly got raided by the automatons!"
     
 bot.run(TOKEN)
